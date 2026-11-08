@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Корзина - СтройМаркет</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="cart">
+<header>
+  <div class="container header__row">
+    <a class="logo" href="index.html"><img src="./images/logo.svg" width="232" height="44" alt="СтройМаркет - строительные материалы"></a>
+    <nav class="menu">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+    </nav>
+    <form class="search" action="catalog.html" role="search">
+      <input type="search" name="q" placeholder="Поиск товаров" aria-label="Поиск товаров">
+      <button class="btn btn--primary" type="submit">Найти</button>
+    </form>
+    <div class="header__user" id="userBox"></div>
+    <a class="cart-link" href="cart.html">Корзина <span class="count" id="cartCount">0</span></a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <h1>Корзина</h1>
+    <div id="done"></div>
+    <div class="cart" id="cartBox">
+      <div id="lines"></div>
+      <form class="box" id="orderForm" novalidate>
+        <h2>Оформление заказа</h2>
+        <div class="field"><label for="name">Имя</label><input id="name" name="name"><div class="error"></div></div>
+        <div class="field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" placeholder="+7 900 123-45-67"><div class="error"></div></div>
+        <label class="check"><input type="radio" name="mode" value="delivery" checked> Доставка</label>
+        <label class="check"><input type="radio" name="mode" value="pickup"> Самовывоз</label>
+        <div class="field" id="addressField"><label for="address">Адрес доставки</label><input id="address" name="address" placeholder="Улица, дом, квартира"><div class="error"></div></div>
+        <div class="field" id="pointField" hidden><label for="point">Пункт самовывоза</label><select id="point" name="point"></select><div class="error"></div></div>
+        <div class="sum-row"><span>Товары</span><span id="sumItems"></span></div>
+        <div class="sum-row"><span>Доставка</span><span id="sumDelivery"></span></div>
+        <div class="sum-row sum-row--total"><span>Итого</span><span id="sumTotal"></span></div>
+        <button class="btn btn--accent btn--block" type="submit" style="margin-top:16px">Оформить заказ</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer__row">
+    <div>© 2026 СтройМаркет - строительные материалы</div>
+    <div>Склад: ул. Промышленная, 14 · Ежедневно 8:00–21:00 · 8 (800) 555-01-23</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

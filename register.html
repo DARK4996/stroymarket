@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Регистрация - СтройМаркет</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="register">
+<header>
+  <div class="container header__row">
+    <a class="logo" href="index.html"><img src="./images/logo.svg" width="232" height="44" alt="СтройМаркет - строительные материалы"></a>
+    <nav class="menu">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+    </nav>
+    <form class="search" action="catalog.html" role="search">
+      <input type="search" name="q" placeholder="Поиск товаров" aria-label="Поиск товаров">
+      <button class="btn btn--primary" type="submit">Найти</button>
+    </form>
+    <div class="header__user" id="userBox"></div>
+    <a class="cart-link" href="cart.html">Корзина <span class="count" id="cartCount">0</span></a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="form-narrow" id="box"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer__row">
+    <div>© 2026 СтройМаркет - строительные материалы</div>
+    <div>Склад: ул. Промышленная, 14 · Ежедневно 8:00–21:00 · 8 (800) 555-01-23</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

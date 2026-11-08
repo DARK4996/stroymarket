@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Личный кабинет - СтройМаркет</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="account">
+<header>
+  <div class="container header__row">
+    <a class="logo" href="index.html"><img src="./images/logo.svg" width="232" height="44" alt="СтройМаркет - строительные материалы"></a>
+    <nav class="menu">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+    </nav>
+    <form class="search" action="catalog.html" role="search">
+      <input type="search" name="q" placeholder="Поиск товаров" aria-label="Поиск товаров">
+      <button class="btn btn--primary" type="submit">Найти</button>
+    </form>
+    <div class="header__user" id="userBox"></div>
+    <a class="cart-link" href="cart.html">Корзина <span class="count" id="cartCount">0</span></a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <h1>Личный кабинет</h1>
+    <div class="box">
+      <h2>Мои данные</h2>
+      <div id="saved"></div>
+      <form id="profile" novalidate>
+        <div class="two-cols">
+          <div class="field"><label for="name">Имя и фамилия</label><input id="name" name="name"><div class="error"></div></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" disabled></div>
+          <div class="field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel"><div class="error"></div></div>
+          <div class="field"><label for="address">Адрес доставки</label><input id="address" name="address"><div class="error"></div></div>
+        </div>
+        <button class="btn btn--primary" type="submit">Сохранить</button>
+        <button class="btn btn--light" type="button" id="out">Выйти</button>
+      </form>
+    </div>
+    <h2 style="margin-top:24px">Мои заказы</h2>
+    <div id="orders"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer__row">
+    <div>© 2026 СтройМаркет - строительные материалы</div>
+    <div>Склад: ул. Промышленная, 14 · Ежедневно 8:00–21:00 · 8 (800) 555-01-23</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

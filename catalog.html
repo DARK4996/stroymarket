@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог - СтройМаркет</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="catalog">
+<header>
+  <div class="container header__row">
+    <a class="logo" href="index.html"><img src="./images/logo.svg" width="232" height="44" alt="СтройМаркет - строительные материалы"></a>
+    <nav class="menu">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+    </nav>
+    <form class="search" action="catalog.html" role="search">
+      <input type="search" name="q" placeholder="Поиск товаров" aria-label="Поиск товаров">
+      <button class="btn btn--primary" type="submit">Найти</button>
+    </form>
+    <div class="header__user" id="userBox"></div>
+    <a class="cart-link" href="cart.html">Корзина <span class="count" id="cartCount">0</span></a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <h1>Каталог</h1>
+    <div class="catalog">
+      <aside class="filters">
+        <h3>Поиск</h3>
+        <input type="search" id="fQuery" placeholder="Название или бренд" aria-label="Поиск">
+        <h3>Категория</h3>
+        <div id="fCats"></div>
+        <h3>Цена, ₽</h3>
+        <div class="price-row"><input type="number" id="fMin" min="0" placeholder="от" aria-label="Цена от"><input type="number" id="fMax" min="0" placeholder="до" aria-label="Цена до"></div>
+        <h3>Наличие</h3>
+        <label class="check"><input type="checkbox" id="fStock"> Только в наличии</label>
+        <button class="btn btn--light btn--block" id="fReset" type="button" style="margin-top:12px">Сбросить фильтры</button>
+      </aside>
+      <div>
+        <div class="toolbar">
+          <span id="count" class="muted"></span>
+          <select id="fSort" aria-label="Сортировка">
+            <option value="">По умолчанию</option><option value="asc">Сначала дешёвые</option>
+            <option value="desc">Сначала дорогие</option><option value="name">По названию</option>
+          </select>
+        </div>
+        <div class="grid" id="list"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer__row">
+    <div>© 2026 СтройМаркет - строительные материалы</div>
+    <div>Склад: ул. Промышленная, 14 · Ежедневно 8:00–21:00 · 8 (800) 555-01-23</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

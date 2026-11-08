@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232" height="44" viewBox="0 0 232 44" role="img" aria-label="СтройМаркет — строительные материалы">
+  <title>СтройМаркет</title>
+  <!-- Знак: плитка с пирамидой из кирпичей -->
+  <rect width="44" height="44" rx="10" fill="#0F5E66"/>
+  <rect x="17.5" y="11.5" width="9" height="6" rx="1.2" fill="#F5B301"/>
+  <g fill="#FFFFFF">
+    <rect x="12.25" y="19" width="9" height="6" rx="1.2"/>
+    <rect x="22.75" y="19" width="9" height="6" rx="1.2"/>
+    <rect x="7" y="26.5" width="9" height="6" rx="1.2"/>
+    <rect x="17.5" y="26.5" width="9" height="6" rx="1.2"/>
+    <rect x="28" y="26.5" width="9" height="6" rx="1.2"/>
+  </g>
+  <!-- Название -->
+  <text x="54" y="25" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
+    <tspan fill="#0F5E66">Строй</tspan><tspan fill="#F5B301">Маркет</tspan>
+  </text>
+  <text x="54" y="39" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#667B82">строительные материалы</text>
+</svg>
